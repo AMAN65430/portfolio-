@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aman — Software & AI/ML Developer</title>
+
+<meta name="description" content="Aman | Software & AI/ML Developer | Data Science Portfolio">
+<meta name="author" content="Aman">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ================= DARK MODE (DEFAULT) ================= */
+:root{
+  --bg:#0a192f;
+  --panel:#0f2236;
+  --text:#e6eef9;
+  --muted:#94a3b8;
+  --accent:#64ffda;
+}
+
+/* ================= LIGHT MODE ================= */
+[data-theme="light"]{
+  --bg:#f6f8fb;
+  --panel:#ffffff;
+  --text:#0b1730;
+  --muted:#475569;
+  --accent:#0b6cff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui;
+  background:var(--bg);
+  color:var(--text);
+  transition:background .3s,color .3s;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+
+header{
+  position:sticky;top:0;
+  background:color-mix(in srgb,var(--bg) 85%,transparent);
+  backdrop-filter:blur(8px);
+}
+.nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 0;
+}
+.logo{
+  width:44px;height:44px;
+  background:linear-gradient(135deg,var(--accent),#0b6cff);
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#001;
+}
+nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+nav a{color:var(--muted);font-weight:600}
+nav a:hover{color:var(--text)}
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:30px;
+  padding:70px 0;
+}
+.hero img{width:100%;border-radius:18px}
+
+.btn{
+  padding:10px 16px;
+  border-radius:10px;
+  background:linear-gradient(90deg,var(--accent),#0b6cff);
+  color:#001;
+  font-weight:700;
+}
+.btn-ghost{
+  padding:10px 16px;
+  border-radius:10px;
+  border:1px solid #ffffff22;
+  color:var(--muted);
+}
+
+section{padding:60px 0}
+.card{
+  background:var(--panel);
+  padding:18px;
+  border-radius:14px;
+}
+
+.skills,.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:16px;
+}
+.pill{
+  padding:6px 10px;
+  background:#ffffff12;
+  border-radius:999px;
+  font-size:13px;
+  margin:4px;
+  display:inline-block;
+}
+
+footer{
+  padding:20px 0;
+  border-top:1px solid #ffffff22;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+}
+
+@media(max-width:800px){
+  .hero{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="logo">A</div>
+      <div>
+        <strong>Aman</strong><br>
+        <small style="color:var(--muted)">Software & AI/ML Developer</small>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ✅ DARK / LIGHT TOGGLE (ADDED ONLY) -->
+    <button id="themeToggle"
+      style="margin-left:16px;padding:8px 12px;border-radius:10px;
+             border:1px solid #ffffff22;background:none;cursor:pointer">
+      🌙
+    </button>
+  </div>
+</header>
+
+<main class="container">
+
+<section id="home" class="hero">
+  <div>
+    <p style="color:var(--muted)">Hello 👋 I'm</p>
+    <h1>Aman</h1>
+    <p style="color:var(--muted)">
+      B.Tech (Data Science) student and passionate Software & AI/ML Developer
+      with experience in web development, machine learning and real-world projects.
+    </p>
+    <div style="margin-top:16px;display:flex;gap:10px">
+      <a class="btn" href="#contact">Hire Me</a>
+     <a class="btn-ghost" href="img/resume.pdf" download="Aman_Resume.pdf">
+  Download Resume
+</a>
+
+    </div>
+  </div>
+<img src="img/PHOTO.png" alt="Aman">
+    
+
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p style="color:var(--muted)">
+      Passionate and detail-oriented Software & AI/ML Developer currently pursuing
+      B.Tech in Data Science at MIET, Meerut. Experienced in building responsive web
+      applications and AI-based systems like face recognition and prediction models.
+    </p>
+    <p><strong>Internship:</strong><br>
+    AI/ML Engineer Intern — Ecotech Service (Sep–Oct 2025)</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h4>Programming</h4>
+      <span class="pill">HTML</span>
+      <span class="pill">CSS</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">Java</span>
+      <span class="pill">Python</span>
+    </div>
+
+    <div class="card">
+      <h4>AI / Data</h4>
+      <span class="pill">NumPy</span>
+      <span class="pill">Pandas</span>
+      <span class="pill">Machine Learning</span>
+    </div>
+
+    <div class="card">
+      <h4>Databases & Tools</h4>
+      <span class="pill">MySQL</span>
+      <span class="pill">MongoDB</span>
+      <span class="pill">Power BI</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h4>House Price Prediction</h4>
+      <p style="color:var(--muted)">ML model using Linear Regression.</p>
+      <a class="btn-ghost" href="https://house-price-prediction-iuyzdhxrz-amans-projects-7d5131eb.vercel.app">Live</a>
+    </div>
+
+    <div class="card">
+      <h4>AI Text-to-Speech App</h4>
+      <p style="color:var(--muted)">Text to voice generation using JS.</p>
+      <a class="btn-ghost" href="https://ai-text-to-speech-gamma.vercel.app/">Live</a>
+    </div>
+      
+      <div class="card">
+      <h4>Face Recognition Voting System</h4>
+      <p style="color:var(--muted)">Secure online voting using facial recognition.</p>
+      <a class="btn-ghost" href="https://face-recognition-voting-system.onrender.com">Live</a>
+    </div>
+
+    <div class="card">
+      <h4>E-Commerce Website</h4>
+      <p style="color:var(--muted)">Responsive shopping platform.</p>
+      <a class="btn-ghost" href="https://noddy-e-commerce.onrender.com">Live</a>
+    </div>
+
+    <div class="card">
+      <h4>Flower Shop Web App</h4>
+      <p style="color:var(--muted)">Online flower ordering system.</p>
+      <a class="btn-ghost" href="https://noddy-flower-shop.onrender.com">Live</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:guptaaman27154@gmail.com">guptaaman27154@gmail.com</a></p>
+    <p>Phone: +91-9084912829</p>
+    <p>
+      <a class="btn-ghost" href="https://linkedin.com/in/aman-3a221230b">LinkedIn</a>
+      <a class="btn-ghost" href="https://github.com/AMAN65430">GitHub</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="container">
+  <div>© 2025 Aman</div>
+  <div><a class="btn-ghost" href="#home">Top</a></div>
+</footer>
+
+<!-- ✅ DARK / LIGHT MODE SCRIPT (ADDED ONLY) -->
+<script>
+const toggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if(savedTheme){
+  document.documentElement.setAttribute("data-theme", savedTheme);
+  toggle.textContent = savedTheme === "light" ? "🌙" : "☀️";
+}
+
+toggle.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "light" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+  toggle.textContent = next === "light" ? "🌙" : "☀️";
+});
+</script>
+
+</body>
+</html>
